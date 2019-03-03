@@ -1,0 +1,12 @@
+# 设置主侧边栏的标题什么的
+sidebar_title: "赤き心の花や咲くらん"
+sidebar_subtitle: "ギトオミ君のメモです。"
+
+truncate_len: 60
+
+rss: atom.xml
+
+# Choose the comment service according to your need.
+# Please do not use the two services at the same time.
+livere: MTAyMC80MjczNy8xOTI4NA==
+#disqus: # [short_name] for disqus.com
