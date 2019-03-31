@@ -1,6 +1,6 @@
 ---
-title: ARM或MCU解码PCM播放WAV
-intro: 播放PCM格式的音频数据的方法。
+title: 解码!WAVE的秘密
+intro: 音频采集、WAV格式解析、解码PCM以及硬件设计指导
 featured_image: bg.jpg
 date: 2019-02-19 23:47:31
 tags:
@@ -9,10 +9,11 @@ tags:
 ---
 
 
-> 纯理论，任何带有的PWM控制器的ARM芯片（其他内核架构也可）模拟DA输出，播放PCM格式的音频数据的方法。
+
 
 ## 音频的采集
-![](https://s2.ax1x.com/2019/02/20/kgvqhQ.png)
+
+<div align=center>![](https://s2.ax1x.com/2019/02/20/kgvqhQ.png)</div>
 通常使用三个参数来表示声音，`量化位数`、`取样频率`、`采样点振幅`。
 量化位数分为`8位`、`16位`、`24位`三种，声道有`单声道`和`立体声`之分。
 单声道振幅数据为n * 1矩阵点，立体声为n * 2矩阵点，取样频率一般有`11025Hz(11kHz) `，`22050Hz(22kHz)`，`44100Hz(44kHz) `三种。
@@ -76,7 +77,7 @@ const unsigned char datap[] = {};
 
 当然，有的盆友就不明白了，都看不到这个数据，怎么提取...
 别担心，当然有好用的工具啦..
-![](https://s2.ax1x.com/2019/02/20/kgxNHf.jpg)
+<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxNHf.jpg)</div>
 [Binary Viewer](https://www.proxoft.com/BinaryViewer.aspx)，这是一个在windows环境中的一个以二进制查看文件的工具，能够显示偏移量，hex，ascii，格式化输出等等..
 可以自定义数据输出格式的功能也是很棒，并且这个软件才1.8M。
 
@@ -114,7 +115,7 @@ const unsigned char datap[] = {};
 如果我们的WAV文件的采样率是1kHz，且数据位是8bit。
 那么每次进中断（此处的中断，使用的是定时器中断）的时候，就按照8bit的数据，调整不同的占空比。
 
-![](https://s2.ax1x.com/2019/02/20/kgxaE8.jpg)
+<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxaE8.jpg)</div>
 1000us改变一次电压，就在横纵坐标(横轴是时间,纵轴是电压)。
 这样一个一个时间-电压点打出来，就在横纵坐标上画出来了音频文件的曲线。
 用[Audition](https://www.adobe.com/cn/products/audition.html)打开所播放的音频波形和画出来的音频曲线大概对比一下就能发现，图像是一模一样的...
@@ -132,7 +133,7 @@ Google一下，网络上很多很多的示范电路...
 
 
 ## つづく
-![](https://s2.ax1x.com/2019/02/20/kgxz2d.jpg)
+<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxz2d.jpg)</div>
 是，没错，我用MCU放了一首张学友的《爱我别走》。
 音质，简直毁了...
 对于想做得更考究的朋友，除了在硬件上需要有所优化。
@@ -141,5 +142,5 @@ Google一下，网络上很多很多的示范电路...
 另外还有一种玩法，就是从PCM的原始数据（WAV）上着手，使用算法将midi的音算出来。这种玩法的好处是，
 非常节省资源，非常适合在MCU等资源紧缺的器件上使用。
 
-
+> 纯理论，任何带有的PWM控制器的ARM芯片（其他内核架构也可）模拟DA输出，播放PCM格式的音频数据的方法。
 

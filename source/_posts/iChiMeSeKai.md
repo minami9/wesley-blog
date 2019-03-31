@@ -1,8 +1,8 @@
 ---
 title: 本週目世界要做的事情
 date: 2019-02-13 20:45:01
-intro: 人生愿望。
-featured_image: bg.jpg
+intro: 人生愿望
+featured_image: bg.png
 tags:
 ---
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27575590&auto=1&height=66"></iframe>
