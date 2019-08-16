@@ -1,5 +1,5 @@
 ---
-title: 解码!WAVE的秘密
+title: 解码WAVE的秘密
 intro: 音频采集、WAV格式解析、解码PCM以及硬件设计指导
 featured_image: bg.jpg
 date: 2019-02-19 23:47:31
