@@ -1,14 +1,14 @@
 ---
-title: OpenGL-Hello World
+title: OpenGL（一）
 date: 2019-08-18 14:38:07
 intro: 关于openGL的学习，包括安装配置编码等等
 featured_image: https://s2.ax1x.com/2019/08/21/mtbNHH.md.jpg
 tags: 
     - openGL
 ---
-
+<br><br><br><br><br><br><br><br><br><br><br><br>
 # 《安装GLFW》
-
+***
 ## 安装cmake-qt-gui
 ```bash
 sudo apt-get install cmake-qt-gui
@@ -50,7 +50,7 @@ make install
 ```
 
 # 《安装GLAD》
-
+***
 [点击这里]( https://glad.dav1d.de/)使用glad的在线服务获取glad代码。
 
 Language 选择C/C++
@@ -83,7 +83,7 @@ src|__glad|__khrplatform.h
 ```
 
 # 《使用QtCreator创建opengl工程》
-
+***
 ## 创建Qt工程
 
 打开QtCreator中新建项目，选择非Qt的C++工程，然后将glad添加到工程中
@@ -103,14 +103,13 @@ LIBS += -L/usr/lib/x86_64-linux-gnu -lX11 \
 ## 添加代码
 
 在main函数中添加
-```C++
+```c
+
 #include <iostream>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-
 using namespace std;
-
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
