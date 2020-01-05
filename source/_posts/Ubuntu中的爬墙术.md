@@ -1,8 +1,8 @@
 ---
-title: Ubuntu中的爬墙术
+title: 爬墙術
 date: 2019-08-16 21:37:12
 intro: ubuntu中的浏览器、terminal、应用的shadowsocks使用方法
-featured_image: bg.jpeg
+featured_image: https://s2.ax1x.com/2019/08/21/mtqyJ1.md.gif
 tags: 
     - Ubuntu
     - 爬墙术

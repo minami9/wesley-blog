@@ -12,9 +12,13 @@
             <div class="post-item-wrapper">
                 <div class="post-item post-item-no-divider">
                     <div class="post-item-info-wrapper">
+                        <div class="post-item-meta">
+                            <%= date(item.date, "YYYY-MM-DD") %>
+                        </div>
                         <div class="post-item-title">
                             <%= item.title %>
                         </div>
+                        <!--
                         <div class="post-item-summary">
                             <%= item.intro && item.intro.length > 0 ? item.intro : truncate(strip_html(item.content), {
                                 length: config.truncate_len ? config.truncate_len : theme.truncate_len ? theme.truncate_len : 140,
@@ -24,13 +28,16 @@
                         <div class="post-item-meta">
                             <%= date(item.date, "YYYY-MM-DD") %>
                         </div>
+                        -->
                     </div>
+                    <!--
                     <% if(item.featured_image){ %>
                     <div class="post-item-image-wrapper">
                         <div class="post-item-image"
                              style="background-image: url('<%= config.root + item.path + item.featured_image %>')"></div>
                     </div>
                     <% } %>
+                    -->
                 </div>
             </div>
         </a>

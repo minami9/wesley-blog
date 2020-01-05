@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ギトオメ君はメモができる
+title: ギ君はメモができる
 subtitle: ようこそ、私の世界へ！
 description: ダメ人間物語
 keywords: アニメ
@@ -83,21 +83,6 @@ prism_plugin:
   theme: 'default'
   line_number: true
 
-
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: rsync
-  host: 138.128.222.174
-  user: J2kly
-  root: /var/www/html/
-  port: 10999
-  delete: true
-  args:
-  verbose: true
-  ignore_errors: false
-
 #live2d
 live2d:
   enable: true
@@ -110,3 +95,11 @@ live2d:
     height: 300
   mobile:
     show: false  #是否在手机进行显示
+
+
+canvas_lines: true
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+
+

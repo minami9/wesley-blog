@@ -1,7 +1,7 @@
 ---
 title: 解码WAVE的秘密
 intro: 音频采集、WAV格式解析、解码PCM以及硬件设计指导
-featured_image: bg.jpg
+featured_image: https://s2.ax1x.com/2019/08/21/mt5WUP.md.png
 date: 2019-02-19 23:47:31
 tags:
     - MCU
