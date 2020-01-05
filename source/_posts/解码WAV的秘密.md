@@ -11,9 +11,10 @@ tags:
 
 
 
-## 音频的采集
 
-<div align=center>![](https://s2.ax1x.com/2019/02/20/kgvqhQ.png)</div>
+<img src="https://s2.ax1x.com/2019/02/20/kgvqhQ.png" class="img-shadow" />
+
+
 通常使用三个参数来表示声音，`量化位数`、`取样频率`、`采样点振幅`。
 量化位数分为`8位`、`16位`、`24位`三种，声道有`单声道`和`立体声`之分。
 单声道振幅数据为n * 1矩阵点，立体声为n * 2矩阵点，取样频率一般有`11025Hz(11kHz) `，`22050Hz(22kHz)`，`44100Hz(44kHz) `三种。
@@ -21,6 +22,7 @@ tags:
 主要明白，就是把传感器（麦克风）在某瞬间（某周期内，用取样频率算）的电压值采集进来，用ADC转换成对应的数字位数存下来，就是采样量化了。
 
 ## WAV文件是什么
+***
 WAV为微软公司（Microsoft)开发的一种声音文件格式，它符合RIFF(Resource Interchange File Format)文件规范。
 用于保存Windows平台的音频信息资源，被Windows平台及其应用程序所广泛支持，该格式也支持MSADPCM、CCITT A LAW等多种压缩运算法。
 支持多种音频数字，取样频率和声道，标准格式化的WAV文件和CD格式一样，也是44.1K的取样频率，16位量化数字，因此在声音文件质量和CD相差无几！
@@ -77,7 +79,10 @@ const unsigned char datap[] = {};
 
 当然，有的盆友就不明白了，都看不到这个数据，怎么提取...
 别担心，当然有好用的工具啦..
-<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxNHf.jpg)</div>
+
+<img src="https://s2.ax1x.com/2019/02/20/kgxNHf.jpg" class="img-shadow" />
+
+
 [Binary Viewer](https://www.proxoft.com/BinaryViewer.aspx)，这是一个在windows环境中的一个以二进制查看文件的工具，能够显示偏移量，hex，ascii，格式化输出等等..
 可以自定义数据输出格式的功能也是很棒，并且这个软件才1.8M。
 
@@ -90,6 +95,7 @@ const unsigned char datap[] = {};
 简直...太棒辣..
 
 ## 解码！PWM来模拟DA输出
+***
 现在开始说PWM模拟DA输出。对于玩过单片机的人来说，PWM并不陌生，即，脉冲宽度调制。实际上PWM出来的，是一个方波。
 大家都知道，但是它有一个周期，所以有周期，那么就有频率了。好，请记住此处是PWM频率！与之前所说的音频采样频率不是同一个东西。
 
@@ -115,13 +121,16 @@ const unsigned char datap[] = {};
 如果我们的WAV文件的采样率是1kHz，且数据位是8bit。
 那么每次进中断（此处的中断，使用的是定时器中断）的时候，就按照8bit的数据，调整不同的占空比。
 
-<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxaE8.jpg)</div>
+<img src="https://s2.ax1x.com/2019/02/20/kgxaE8.jpg" class="img-shadow" />
+
+
 1000us改变一次电压，就在横纵坐标(横轴是时间,纵轴是电压)。
 这样一个一个时间-电压点打出来，就在横纵坐标上画出来了音频文件的曲线。
 用[Audition](https://www.adobe.com/cn/products/audition.html)打开所播放的音频波形和画出来的音频曲线大概对比一下就能发现，图像是一模一样的...
 好，现在应该就能够听见喇叭出来的每秒的声音了吧..
 
 ## 硬件怎么设计
+***
 MCU引脚---->功放--->滤波器--->喇叭。
 Google一下，网络上很多很多的示范电路...
 我就不贴图了，对。
@@ -133,7 +142,7 @@ Google一下，网络上很多很多的示范电路...
 
 
 ## つづく
-<div align=center>![](https://s2.ax1x.com/2019/02/20/kgxz2d.jpg)</div>
+***
 是，没错，我用MCU放了一首张学友的《爱我别走》。
 音质，简直毁了...
 对于想做得更考究的朋友，除了在硬件上需要有所优化。

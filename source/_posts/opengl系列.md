@@ -172,4 +172,4 @@ int main()
 
 ## 编译运行之后会出现一个漆黑的窗口
 
-[![mMLZ9J.md.png](https://s2.ax1x.com/2019/08/18/mMLZ9J.md.png)](https://imgchr.com/i/mMLZ9J)
+<img src="https://s2.ax1x.com/2019/08/18/mMLZ9J.md.png" class="img-shadow" />
