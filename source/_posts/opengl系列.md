@@ -6,7 +6,6 @@ featured_image: https://s2.ax1x.com/2019/08/21/mtbNHH.md.jpg
 tags: 
     - openGL
 ---
-<br><br><br><br><br><br><br><br><br><br><br><br>
 # 《安装GLFW》
 ***
 ## 安装cmake-qt-gui

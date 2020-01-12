@@ -45,10 +45,12 @@ config.__noPager = true
     
             <div class="post-body-wrapper">
                 <div class="post-body">
+                    <% if (page.toc){ %>
                     <%- toc(page.content, {
                         class: 'toc',
                         list_number: false
                     }) %>
+                    <% } %>
                     <%- page.content %>
                 </div>
             </div>
