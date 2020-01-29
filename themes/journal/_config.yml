@@ -8,5 +8,5 @@ rss: atom.xml
 
 # Choose the comment service according to your need.
 # Please do not use the two services at the same time.
-livere: MTAyMC80MjczNy8xOTI4NA==
-#disqus: # [short_name] for disqus.com
+# livere: MTAyMC80MjczNy8xOTI4NA==
+disqus: www-j2kly-com
