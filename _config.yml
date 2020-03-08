@@ -96,10 +96,12 @@ live2d:
   mobile:
     show: false  #是否在手机进行显示
 
-
 canvas_lines: true
 
 # Deployment
-## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/Jack091545/Jack091545.github.io
+  branch: master
 
 
