@@ -7,7 +7,7 @@ body {
 	text-rendering:optimizeLegibility!important;
 	-webkit-font-smoothing:antialiased!important;
 	color:#000;
-	background-image:url(https://s2.ax1x.com/2020/01/05/lBzqJ0.jpg);
+	background-image:url("https://s2.ax1x.com/2020/03/08/3z8dAS.jpg");
 	background-attachment:fixed;
 	background-repeat:no-repeat;
 	background-size:cover
@@ -278,7 +278,7 @@ a:hover {
 	position:fixed;
 	top:0;
 	height:100vh;
-	width:15%;
+	width:18%;
 	text-align:right;
 	font-family:Montserrat,Roboto,"Source Sans Pro",Helvetica,Arial,Lora,source-han-serif-tc,serif;
 	padding:20px 0 50px 0;
@@ -421,9 +421,9 @@ a:hover {
 	flex-direction:column
 }
 .stream-container {
-	padding-left:15%;
+	padding-left:18%;
 	padding-right:64px;
-	width:55%;
+	width:70%;
 	min-height:100vh;
 	max-width:1480px
 }
@@ -454,7 +454,7 @@ a:hover {
 }
 .stream-container .post-list-container .post-item-wrapper .post-item,.stream-container .post-list-container>* .post-item-wrapper .post-item {
 	margin:0 28px 0 35px;
-	padding:15px 0;
+	padding:10px 0;
 	display:flex;
 	flex-direction:row;
 	align-items:center
