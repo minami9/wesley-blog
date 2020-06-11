@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 404.html
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -103,5 +103,6 @@ deploy:
   type: git
   repo: https://github.com/Jack091545/Jack091545.github.io
   branch: master
+
 
 

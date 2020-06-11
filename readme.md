@@ -9,7 +9,7 @@ sudo apt-get install npm
 ```bash
 sudo npm install hexo-cli -g
 sudo npm install 
-sudo npm npm install --save hexo-helper-live2d
+sudo npm install --save hexo-helper-live2d
 cd node_modules/live2d-widget-model-haru/
 cp package.json 02/package.json
 ```
