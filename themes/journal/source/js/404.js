@@ -7,6 +7,7 @@ var currentParagraphsIndex = 0;
 function blinkCursor()
 {
     var blinkNode = document.getElementById("blink-block");
+
     if (blinkNode == null)
         return;
 
@@ -82,9 +83,9 @@ function consoleCommunications()
 
     var ch = sentence[currentSentensIndex].substring(currentChIndex, currentChIndex + 1);
     if (ch === ' ')
-        ch = '\xa0\xa0';
+        ch = '\xa0';
 
-    paragraphs.innerText = paragraphs.innerText + ch.toUpperCase();
+    paragraphs.innerText = paragraphs.innerText + ch;//.toUpperCase();
     appendBlinkBlock(paragraphs);
 
     currentChIndex++;
@@ -92,7 +93,7 @@ function consoleCommunications()
 
 function runConsole()
 {
-    setInterval(consoleCommunications, 180);
+    setInterval(consoleCommunications, 100);
 }
 
 function consoleShow()
