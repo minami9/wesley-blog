@@ -17,4 +17,4 @@ no_comments: true
 [WallpaperAbyss](https://wall.alphacoders.com/by_category.php?id=3&name=%E5%8A%A8%E6%BC%AB+%E5%A3%81%E7%BA%B8&lang=Chinese) - 壁纸搜刮地prprpr
 <br>
 ### 找我：<br>
-请投递邮箱：J2klyEffective@163.com
+请投递邮箱：amada.minami@protonmail.com

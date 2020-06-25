@@ -17,7 +17,7 @@ tags:
 google官方文档这样写着。
 
 其实这两种有种很大的弊端，google官方从应用设计的角度去考虑了，但不能满足应用开发者所要用到所有要求。即，当应用需要使用10+以上数量端口的时候，使用端口映射或许会使使用者变得焦虑无比，从而放弃。但庆幸，qemu的设计者并没有这么愚顿。emulator存在一个`-nap-tap`选项，用于满足使用tap的情形。也就是说，这将成为第三种给Andorid系统接入网络的方式。
-<br><br>
+
 ## 进行准备工作
 ***
 使用的实验环境：
@@ -41,7 +41,6 @@ sudo apt-get install uml-utilities
 # UML（User-mode linux）工具
 sudo apt-get install bridge-utils
 ```
-<br><br>
 ## 创建网桥
 ***
 针对创建网桥的方式，根据如图所示
@@ -88,7 +87,6 @@ sudo brctl delbr br0 # 删除网桥
 sudo ifconfig ens9 up
 
 ```
-<br><br>
 
 ## 启动模拟器
 ***
@@ -110,8 +108,6 @@ export LD_LIBRARY_PATH=/home/user/Android/Sdk/emulator/lib64/qt/lib:/home/user/A
 其中`-net-tap0`即为使用刚刚创建好的tap0，这样进入android系统的时候，使用`adb shell`打开shell后，`ifconfig -a`，查看ip地址的时候，就可以发现，已经和宿主机是相同的ip地址了。互相ping一下，也能ping通。说明，andorid模拟器已经成为与宿主机同级网络下的一个终端机了。
 
 上述环境所使用的android镜像是通过android studio下载安装的andorid镜像。
-
-<br><br>
 
 ## 但是
 ***
