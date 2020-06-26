@@ -20,6 +20,9 @@
         <a class="a-block no-tint nav-link-item <%= is_current('links') && 'active' %>" href="<%= config.root + "links" %>">
             <%= __('Links') %>
         </a>
+        <a class="a-block no-tint nav-link-item <%= is_current('categories') && 'active' %>" href="<%= config.root + "categories" %>">
+            <%= __('Categories') %>
+        </a>
         <!--
         <% if(site.posts){ %>
         <% site.posts.each(function (page){ %>

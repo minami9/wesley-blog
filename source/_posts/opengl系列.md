@@ -3,6 +3,7 @@ title: OpenGL（一）
 date: 2019-08-18 14:38:07
 intro: 关于openGL的学习，包括安装配置编码等等
 featured_image: https://s2.ax1x.com/2019/08/21/mtbNHH.md.jpg
+category: 技术
 tags: 
     - openGL
 ---

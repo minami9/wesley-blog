@@ -3,6 +3,7 @@ title: Andorid模拟器桥接网络通信宿主机
 date: 2020-01-09 23:03:01
 intro: Andorid模拟器非google所介绍的第三种隐藏网络接入方法
 featured_image: https://s2.ax1x.com/2020/01/09/lfNm26.md.jpg
+category: 技术
 tags: 
     - Android
     - Emulator
