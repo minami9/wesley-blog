@@ -1,5 +1,5 @@
 ---
-title: OpenGL（一）
+title: OpenGL工程模板
 date: 2019-08-18 14:38:07
 intro: 关于openGL的学习，包括安装配置编码等等
 featured_image: https://s2.ax1x.com/2019/08/21/mtbNHH.md.jpg

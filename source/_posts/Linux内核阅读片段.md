@@ -1,5 +1,5 @@
 ---
-title: Linux内核阅读笔记
+title: Linux内核阅读片段
 date: 2020-07-08 17:33:39
 intro: RTFS
 featured_image: https://s2.ax1x.com/2019/08/21/mtTvPP.md.png
@@ -107,6 +107,37 @@ M[4:0]=0b11011，Undefined模式
 M[4:0]=0b11011，System模式
 ```
 
+## 寄存器记录
+```c
+/* 由bootloader传入这三个参数 */
+r1 = arch ID
+r2 = atags pointor
+r3 = phy offset
+
+/* 寄存器记录 */
+r1  = LC0
+r2  = __bss_start
+r3  = _end
+r4  = zreladdr
+r5  = _start
+r6  = _image_size
+r7  = arch ID
+r8  = atags pointor
+r9  = phy offset
+r11 = _got_start
+ip  = _got_end
+sp  = user_stack + 4096
+
+```
+
+## 内核初始化步骤
+1. 保存bootloader由r1-r3传入的三个参数，分别是arch ID、atags pointor、phy offset。
+
+2. 判断CPU是否运行在SVC模式，如果不在就用软件中断方式进入SVC模式，并关闭所有中断。
+
+3. 重定位代码，调整zImage基地址，GOT的起点，GOT的终点，清除BSS段（可选），重定位GOT中的函数地址。
+
+4. 清除BSS段
 
 
 
