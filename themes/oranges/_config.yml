@@ -176,7 +176,7 @@ footer:
       path: https://www.j2kly.com
     -
       name: Theme by Oranges | Powered by Hexo
-      path: https://www.j2kly.com
+      path: https://github.com/zchengsite/hexo-theme-oranges
 
 # 文章搜索
 search:
